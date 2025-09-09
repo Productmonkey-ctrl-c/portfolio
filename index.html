@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainer Hopfer – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    section { padding: 80px 20px; }
+
+    /* Header */
+    header { background: #fff; padding: 20px 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-weight: 700; font-size: 1.5rem; color: #0070f3; }
+    nav a { margin-left: 20px; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #0070f3; }
+
+    /* Hero Section */
+    #hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: #0070f3; color: #fff; min-height: 100vh; }
+    #hero h2 { font-size: 2.5rem; margin-bottom: 20px; }
+    #hero p { font-size: 1.2rem; max-width: 600px; }
+
+    /* About */
+    #about { background: #fff; text-align: center; }
+    #about h2 { font-size: 2rem; margin-bottom: 20px; color: #0070f3; }
+    #about p { max-width: 700px; margin: 0 auto; color: #555; }
+
+    /* Experience / Projects */
+    #projects { background: #f1f1f1; }
+    #projects h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #0070f3; }
+    .project-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .project { background: #fff; padding: 20px; width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .project:hover { transform: translateY(-5px); }
+    .project h3 { margin-bottom: 10px; color: #0070f3; }
+    .project p { color: #555; }
+
+    /* Skills */
+    #skills { background: #fff; text-align: center; }
+    #skills h2 { font-size: 2rem; margin-bottom: 40px; color: #0070f3; }
+    .skill { display: inline-block; margin: 10px 20px; font-weight: 600; }
+
+    /* Contact */
+    #contact { background: #f1f1f1; text-align: center; }
+    #contact h2 { font-size: 2rem; margin-bottom: 20px; color: #0070f3; }
+    #contact a { display: inline-block; margin: 10px 15px; padding: 10px 20px; background: #0070f3; color: #fff; border-radius: 8px; transition: background 0.3s; }
+    #contact a:hover { background: #005bb5; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #fff; color: #555; border-top: 1px solid #eee; }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      #hero h2 { font-size: 2rem; }
+      .project-container { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Rainer Hopfer</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">Über mich</a>
+      <a href="#projects">Projekte</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Hallo, ich bin Rainer Hopfer</h2>
+    <p>IT Service Owner mit Erfahrung in Produktmanagement, Supportaufbau und Schnittstellenintegration. Willkommen auf meiner persönlichen Portfolio-Seite!</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Über mich</h2>
+    <p>Nach einem Jahr im 1st-Level-Support bei Finmatics konnte ich ins Produktteam wechseln, wo ich Schnittstellen zwischen Abteilungen und externen Partnern koordinierte. Mein Ziel ist es nun, meine Erfahrungen bei ServiceNow einzubringen und weiter auszubauen.</p>
+  </section>
+
+  <!-- Projects / Experience -->
+  <section id="projects">
+    <h2>Projekte & Erfahrungen</h2>
+    <div class="project-container">
+      <div class="project">
+        <h3>1st-Level Support Aufbau</h3>
+        <p>Eigenverantwortlicher Aufbau des Supports bei Finmatics, inkl. Wissensmanagement und Ticketprozesse.</p>
+      </div>
+      <div class="project">
+        <h3>Produktteam & Schnittstellen</h3>
+        <p>Koordination zwischen Produktentwicklung, Abteilungen und externen Partnern, Priorisierung von Anforderungen.</p>
+      </div>
+      <div class="project">
+        <h3>API-Integrationen</h3>
+        <p>Mitwirkung an Partnerintegrationen, Feature-Testing und Optimierung von Schnittstellenprozessen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <div>
+      <span class="skill">ServiceNow</span>
+      <span class="skill">Produktmanagement</span>
+      <span class="skill">API-Integrationen</span>
+      <span class="skill">Supportaufbau</span>
+      <span class="skill">Confluence</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <a href="mailto:rainer@example.com">E-Mail</a>
+    <a href="https://www.linkedin.com/in/rainerhopfer" target="_blank">LinkedIn</a>
+    <a href="https://github.com/rainerhopfer" target="_blank">GitHub</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rainer Hopfer – Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
